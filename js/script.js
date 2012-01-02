@@ -17,7 +17,7 @@ $("#getRedditUNameForm").submit(function(){
 				success: function(response) {
 					$("#result").slideUp("slow");
 					$("#result").html(formatDateTime(response.data.created_utc));
-					$("#result").slideToggle("slow");
+					$("#result").slideDown("slow");
 				}
 			});
 		}
