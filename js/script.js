@@ -15,6 +15,8 @@ $("#getRedditUNameForm").submit(function(){
 				error: function(data, textStatus, jqXHR) {
 					alert('DANGER DANGER WILL ROBINSON!');
 					console.log(data);
+					console.log(textStatus);
+					console.log(jqXHR);
 				},
 				success: function(data, textStatus, jqXHR) {
 					alert("Callback!");
