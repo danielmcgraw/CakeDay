@@ -3,16 +3,18 @@
 */
 
 $("#getRedditUNameForm").submit(function(){
-	alert("Form Submit!")
+	alert("Form Submit!");
 	var uname = $("#uname").val();
 		if (uname.length == 0) {
 			$("#uname").focus();
 		} else {
-			alert("Get me some ajax")
-			$.ajax(
-				"www.reddit.com/user/" + uname + "/about.json",
+			alert("Get me some ajax");
+			$.getJSON("www.reddit.com/user/" + uname + "/about.json",
 				function(json) {
-					alert("Callback!")
+					alert("Callback!");
+					//$.each(result, function(i, field){
+					//      $("div").append(field + " ");
+					//    });
 					var result = "<p>Data \"<strong>" + json.responseData.data + "</strong>\"</p>";
 					$("#result").html(result);
 				});
