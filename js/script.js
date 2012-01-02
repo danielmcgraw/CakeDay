@@ -9,10 +9,9 @@ $("#getRedditUNameForm").submit(function(){
 			$("#uname").focus();
 		} else {
 			alert("Get me some ajax");
-			var url = "http://www.reddit.com/user/" + uname + "/about.json?callback=?";
 			$.ajax(
-				url: url,
-				dataType: "jsonp"
+				url: "http://www.reddit.com/user/" + uname + "/about.json?callback=?",
+				dataType: "jsonp",
 				error: function() {
 					alert('DANGER DANGER WILL ROBINSON!');
 				},
