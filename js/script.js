@@ -9,7 +9,7 @@ $("#getRedditUNameForm").submit(function(){
 			$("#uname").focus();
 		} else {
 			alert("Get me some ajax");
-			$.getJSON("http://www.reddit.com/user/" + uname + "/about.json?callback=parseData"
+			$.getJSON("http://www.reddit.com/user/" + uname + "/about.json?callback=parseData");
 		}
 	return false;
 });
