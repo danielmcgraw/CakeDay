@@ -20,8 +20,12 @@ $("#getRedditCakeDayForm").submit(function(){
 						$("#result").html(dt.toString());
 						$("#result").slideDown("slow");
 					});
-					
-					
+				},
+				error: function() {
+					$("#result").slideUp("slow", function() {
+						$("#result").html("No Reddit user with that name was found");
+						$("#result").slideDown("slow");
+					});
 				}
 			});
 		}
