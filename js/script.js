@@ -9,7 +9,7 @@ $("#getRedditUNameForm").submit(function(){
 			$("#uname").focus();
 		} else {
 			alert("Get me some ajax");
-			$.get("http://www.reddit.com/user/" + uname + "/about.json?callback=?",
+			$.getJSON("http://www.reddit.com/user/" + uname + "/about.json?callback=?",
 				function(json) {
 					alert("Callback!");
 					//$.each(result, function(i, field){
