@@ -15,8 +15,9 @@ $("#getRedditUNameForm").submit(function(){
 				url: "http://www.reddit.com/user/" + uname + "/about.json?jsonp=?",
 				dataType: "jsonp",
 				success: function(response) {
-					
-					$("#result").html(formatDateTime(response.data.created_utc)).slideToggle("slow");
+					$("#result").slideUp("slow");
+					$("#result").html(formatDateTime(response.data.created_utc));
+					$("#result").slideToggle("slow");
 				}
 			});
 		}
