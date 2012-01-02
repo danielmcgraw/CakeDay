@@ -23,6 +23,8 @@ $("#getRedditUNameForm").submit(function(){
 				success: function(data, textStatus, jqXHR) {
 					alert("Callback!");
 					console.log(data);
+					console.log(textStatus);
+					console.log(jqXHR);
 					//var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
 					//$("#result").html(result);
 				}
