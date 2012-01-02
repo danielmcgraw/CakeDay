@@ -10,8 +10,8 @@ $("#getRedditUNameForm").submit(function(){
 		} else {
 			alert("Get me some ajax");
 			$.ajax({
-				url: "http://www.reddit.com/user/" + uname + "/about.json",
-				dataType: "script",
+				url: "http://www.reddit.com/user/" + uname + "/about.json?jsonp=?",
+				dataType: "jsonp",
 				error: function(data) {
 					alert('DANGER DANGER WILL ROBINSON!');
 					console.log(data);
