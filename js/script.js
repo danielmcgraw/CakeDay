@@ -12,12 +12,13 @@ $("#getRedditUNameForm").submit(function(){
 			$.ajax({
 				url: "http://www.reddit.com/user/" + uname + "/about.json",
 				dataType: "jsonp",
-				error: function() {
+				error: function(data, textStatus, jqXHR) {
 					alert('DANGER DANGER WILL ROBINSON!');
+					console.log(data);
 				},
-				success: function(json) {
+				success: function(data, textStatus, jqXHR) {
 					alert("Callback!");
-					console.log(json);
+					console.log(data);
 					//var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
 					//$("#result").html(result);
 				}
