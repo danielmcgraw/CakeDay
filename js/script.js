@@ -9,14 +9,20 @@ $("#getRedditUNameForm").submit(function(){
 			$("#uname").focus();
 		} else {
 			alert("Get me some ajax");
-			$.getJSON("http://www.reddit.com/user/" + uname + "/about.json?callback=parseData");
+			var url = "http://www.reddit.com/user/" + uname + "/about.json?callback=?";
+			$.ajax(
+				url: url,
+				dataType: "jsonp"
+				error: function() {
+					alert('DANGER DANGER WILL ROBINSON!');
+				},
+				success: function(json) {
+					alert("Callback!");
+					console.log(json);
+					//var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
+					//$("#result").html(result);
+				}
+			);
 		}
 	return false;
 });
-
-function parseData(json) {
-	alert("Callback!");
-	console.log(json);
-	//var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
-	//$("#result").html(result);
-}
