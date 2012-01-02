@@ -11,7 +11,6 @@ $("#getRedditUNameForm").submit(function(){
 			alert("Get me some ajax");
 			$.ajax({
 				url: "http://www.reddit.com/user/" + uname + "/about.json?jsonp=?",
-				dataType: "jsonp",
 				error: function(data) {
 					alert('DANGER DANGER WILL ROBINSON!');
 					console.log(data);
