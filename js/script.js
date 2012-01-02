@@ -15,7 +15,7 @@ $("#getRedditUNameForm").submit(function(){
 					//$.each(result, function(i, field){
 					//      $("div").append(field + " ");
 					//    });
-					var result = "<p>Data \"<strong>" + json.responseData.data + "</strong>\"</p>";
+					var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
 					$("#result").html(result);
 				});
 		}
