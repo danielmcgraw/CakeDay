@@ -26,7 +26,7 @@ $("#getRedditCakeDayForm").submit(function(){
 						$("#result").html("No Reddit user with that name was found");
 						$("#result").slideDown("slow");
 					});
-				}
+				},
 				complete: function(xhr, response) {
 						console.log(xhr);
 						console.log(response);
