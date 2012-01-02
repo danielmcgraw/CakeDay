@@ -9,14 +9,12 @@ $("#getRedditUNameForm").submit(function(){
 			$("#uname").focus();
 		} else {
 			alert("Get me some ajax");
-			$.getJSON("http://www.reddit.com/user/" + uname + "/about.json?callback=?",
+			$.getJSON("http://www.reddit.com/user/" + uname + "/about.json",
 				function(json) {
 					alert("Callback!");
-					//$.each(result, function(i, field){
-					//      $("div").append(field + " ");
-					//    });
-					var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
-					$("#result").html(result);
+					console.log(json);
+					//var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
+					//$("#result").html(result);
 				});
 		}
 	return false;
