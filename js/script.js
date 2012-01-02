@@ -10,7 +10,7 @@ $("#getRedditUNameForm").submit(function(){
 		} else {
 			alert("Get me some ajax")
 			$.ajax(
-				"http://www.reddit.com/user/" + uname + "/about.json",
+				"www.reddit.com/user/" + uname + "/about.json",
 				function(json) {
 					alert("Callback!")
 					var result = "<p>Data \"<strong>" + json.responseData.data + "</strong>\"</p>";
