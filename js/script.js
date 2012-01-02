@@ -9,7 +9,13 @@ $("#getRedditUNameForm").submit(function(){
 			$("#uname").focus();
 		} else {
 			alert("Get me some ajax");
-			$.ajax({
+			$.getJSON("http://www.reddit.com/user/" + uname + "/about.json",
+			    function(data){
+			      $.each(data, function(i,item){            
+			        alert(item.x);
+			      });
+			  });
+			/*$.ajax({
 				url: "http://www.reddit.com/user/" + uname + "/about.json",
 				dataType: "jsonp",
 				jsonp: false, 
@@ -26,7 +32,7 @@ $("#getRedditUNameForm").submit(function(){
 					//var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
 					//$("#result").html(result);
 				}
-			});
+			});*/
 		}
 	return false;
 });
