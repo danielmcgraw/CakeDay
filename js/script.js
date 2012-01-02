@@ -9,14 +9,9 @@ $("#getRedditUNameForm").submit(function(){
 			$("#uname").focus();
 		} else {
 			alert("Get me some ajax");
-			$.getJSON("http://www.reddit.com/user/" + uname + "/about.json?jsoncallback=?",
-			  {},
-			  function(data) {
-			    console.log(data);
-			  });
-			/*$.ajax({
+			$.ajax({
 				url: "http://www.reddit.com/user/" + uname + "/about.json",
-				dataType: "jsonp",
+				dataType: "script",
 				jsonp: false, 
 				jsonpCallback: "hollaBack",
 				error: function(data, textStatus, jqXHR) {
@@ -31,7 +26,7 @@ $("#getRedditUNameForm").submit(function(){
 					//var result = "<p>Data \"<strong>" + json + "</strong>\"</p>";
 					//$("#result").html(result);
 				}
-			});*/
+			});
 		}
 	return false;
 });
