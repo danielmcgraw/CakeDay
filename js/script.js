@@ -12,6 +12,8 @@ $("#getRedditUNameForm").submit(function(){
 			$.ajax({
 				url: "http://www.reddit.com/user/" + uname + "/about.json",
 				dataType: "jsonp",
+				jsonp: false, 
+				jsonpCallback: "hollaBack",
 				error: function(data, textStatus, jqXHR) {
 					alert('DANGER DANGER WILL ROBINSON!');
 					console.log(data);
@@ -28,3 +30,7 @@ $("#getRedditUNameForm").submit(function(){
 		}
 	return false;
 });
+
+function hollaBack(json) {
+	console.logging(json);
+}
