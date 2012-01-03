@@ -222,13 +222,13 @@ label.has-text { color: #fff; -webkit-transition-duration: 0s; }
 label.inlined + input.input-text { margin-top: -25px; }
 label.inlined + textarea.input-text { margin-top: -43px; }
 		
-label.inlined.mini { width: 94px; }
+/*label.inlined.mini { width: 94px; }
 label.inlined.small { width: 124px; }
 label.inlined.medium { width: 334px; }
 label.inlined.large { width: 584px; }
 label.inlined.textarea { height: 36px; }
 
-/*label.inlined + input.input-text { margin-top: -22px; background-color: transparent; position: relative; z-index: 2; }
+label.inlined + input.input-text { margin-top: -22px; background-color: transparent; position: relative; z-index: 2; }
 
 label.inlined { padding-left: 6px; font: normal 12px/18px; position: relative; z-index: 1; opacity: 0.75; -webkit-transition: opacity 0.15s linear; }
 
