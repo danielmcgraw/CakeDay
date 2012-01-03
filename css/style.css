@@ -203,7 +203,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 #container { margin: auto; font-weight: normal; font-size: 40px; font-family: "Helvetica Neue"; }
 
-header p { color: rgba(7, 206, 250, 0.5); text-shadow: 10px 0px 0 rgba(173, 9, 24, 0.5); }
+header p { color: rgba(7, 206, 250, 0.5); text-shadow: 5px 0px 0 rgba(173, 9, 24, 0.5); }
 
 /* =============================================================================
    Non-semantic helper classes
