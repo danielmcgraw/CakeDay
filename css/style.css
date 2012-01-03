@@ -207,6 +207,8 @@ header p { color: rgba(7, 206, 250, 0.5); text-shadow: 5px 0px 0 rgba(173, 9, 24
 
 label.inlined + input.input-text { margin-top: -22px; background-color: transparent; position: relative; z-index: 2; }
 
+label.inlined { padding-left: 6px; font: normal 12px/18px; position: relative; z-index: 1; opacity: 0.75; -webkit-transition: opacity 0.15s linear; }
+
 /* =============================================================================
    Non-semantic helper classes
    Please define your styles before this section.
