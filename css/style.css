@@ -201,7 +201,7 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: 
    ========================================================================== */
 
-#container { margin: auto; font-weight: normal; font-size: 40px; font-family: Helvetica Neue, "Arial", Helvetica, Verdana, sans-serif; }
+#container { font-weight: normal; font-size: 40px; font-family: Helvetica Neue, "Arial", Helvetica, Verdana, sans-serif; }
 
 header p { color: rgba(7, 206, 250, 0.5); text-shadow: 5px 0px 0 rgba(173, 9, 24, 0.5); }
 
