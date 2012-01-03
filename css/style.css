@@ -201,12 +201,17 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: 
    ========================================================================== */
 
+#container { margin: auto; font-weight: normal; font-size: 12px; font-family: "Helvetica Neue"; }
 
+#header { text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px; }
 
+input.input-text { position: relative; z-index: 2; }
+ 
+label { position: relative; z-index: 1; }
 
+label.inlined { padding-left: 6px; opacity: 0.75; -webkit-transition: opacity 0.15s linear; }
 
-
-
+label.inlined + input.input-text { margin-top: -22px; }
 
 /* =============================================================================
    Non-semantic helper classes
