@@ -201,9 +201,9 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: 
    ========================================================================== */
 
-#container { margin: auto; font-weight: normal; font-size: 4px; font-family: "Helvetica Neue"; }
+#container { margin: auto; font-weight: normal; font-size: 40px; font-family: "Helvetica Neue"; }
 
-#header { color: rgba(7, 206, 250, 0.5); text-shadow: rgba(173, 9, 24, 0.5) 18px 0px 0; }
+#header { color: rgba(7, 206, 250, 0.5); text-shadow: 18px 0px 0 rgba(173, 9, 24, 0.5); }
 
 /* =============================================================================
    Non-semantic helper classes
