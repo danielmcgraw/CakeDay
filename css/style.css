@@ -217,6 +217,7 @@ label.has-text { color: #fff; -webkit-transition-duration: 0s; }
 label.inlined + input.input-text { margin-top: -50px; }
 label.inlined + textarea.input-text { margin-top: -43px; }
 
+
 /* =============================================================================
    Non-semantic helper classes
    Please define your styles before this section.
