@@ -230,7 +230,7 @@ form #getJSON:active { outline: 0; -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5)
 
 form #getJSON::-moz-focus-inner { border: 0; }
 
-#result {
+#result { text-align: center; font-size:80px; color: rgba(75, 75, 75, 0.5); }
 
 footer { position: relative; height: 90px; clear: both; width: 100%; margin-bottom: 18px; }
 

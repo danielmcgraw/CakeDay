@@ -27,11 +27,11 @@ $("#getRedditCakeDayForm").submit(function(){
 			$.ajax({
 				url: "http://www.reddit.com/user/" + uname + "/about.json?jsonp=?",
 				dataType: "jsonp",
-				timeout: 3000,
+				timeout: 8000,
 				success: function(response) {
 					dt = new Date(response.data.created_utc * 1000);
 					$("#result").slideUp("slow", function() {
-						$("#result").html(dt.toString());
+						$("#result").html("You were born " + jQuery.timeago(dt) + " on " + dt.toLocaleDateString());
 						$("#result").slideDown("slow");
 					});
 				},
