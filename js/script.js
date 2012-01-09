@@ -3,7 +3,7 @@
 */
 
 $(document).ready(function() {
-	$("#uname").focus();
+	//$("#uname").focus();
 	$("label.inlined + .input-text").each(function (type) {
 		$(this).focus(function () {
 			$(this).prev("label.inlined").addClass("focus");
