@@ -203,7 +203,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 html { height: 100%; width:100% }
 
-body { margin: 0 0 1px; height: 100%; background: url(/images/bgtexture.png) left top repeat; }
+body { margin: 0 0 1px; height: 100%; background: url(../images/bgtexture.png) left top repeat; }
 
 #container { position: relative; margin: 0 auto; display: block; width: 960px; min-height: 100%; font-weight: normal; font-size: 35px; font-family: Helvetica Neue, "Arial", Helvetica, Verdana, sans-serif; }
 
